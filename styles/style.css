@@ -8,16 +8,14 @@ body{
     margin: 0;
     padding: 0;
     background-color:#F3F1FF;
+    /* box-sizing: border-box; */
 }
 
 
 
 .container{
     
-    width: 1160px;
-   
-   
-   
+      width: 1160px;
 }
 .container1{
     width: 1050px;
@@ -25,47 +23,80 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* header-part{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-
-
-/* header{
+ header{
     width: 100%;
-    background-color: rgb(32, 32, 253);
-    
-}
-
-.flex{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(32, 32, 253);
+    margin-bottom: 70px;
+    
+    
 }
-.navbar {
-    margin: 0;
+.header-part{
+    display: flex;
+    flex-direction: column;
+    
 }
-.navbar ul{
-    margin-left: -36px;
+.header-part-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
 }
 .navbar ul li{
+    list-style: none;
     display: inline-block;
     margin-right: 36px;
-
+    
 }
-header nav ul li a{
+.navbar ul li a {
+    font-size: 16px;
     text-decoration: none;
-    font-weight: 500;
-font-size: 16px;
-color: #fff;
-}
-.login-icon{
-    padding: 10px 24px;
-    background-color: #E02C6D;
     color: #fff;
-} */
+}
+.right img{
+    /* width: 388px;
+height: 428px; */
+width: 556.01px;
+height: 438px;
+margin-top: 49px;
+margin-bottom: 86px;
+transition: transform 3s ease-in;  
+}
+/* transform add------------------------- */
+.right img:hover{
+  
+    transform: scale(1.1);
+}
+
+.login-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.color-btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 24px;
+    background: #E02C6D;
+}
+.header-part-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left p{
+    color: #fff;
+    font-weight: bold;
+font-size: 64px;
+margin-bottom: 0;
+margin-top: 121px;
+}
+.left a{
+    margin-top: 27px;
+}
+
 
 /* players section-- */
 main{
@@ -91,6 +122,10 @@ padding: 15px;
     width: 300px;
 height: 256px;
 }
+.player-info{
+    width: 300px;
+height: 154px;
+}
 .player h3{
     font-weight: bold;
 font-size: 28px;
@@ -101,6 +136,17 @@ margin: 16px 0px;
     font-size: 16px;
 }
 
+/* playground css */
+.about-play{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 69px;
+    margin-top: 165px;
+}
+.play-img img{
+    width: 567px;
+height: 427px;
+}
 
 
 
@@ -116,6 +162,14 @@ margin: 16px 0px;
 /* footer-part */
 
 footer{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 483.87px;
+height: 213px;
+}
+.foot-part{
     display: flex;
 flex-direction: column;
 justify-content: center;
@@ -152,7 +206,7 @@ height: 110px;
 
 
 
-
+/* media query start --------------- */
 
 
 @media only screen and (max-width:688px) {
@@ -163,8 +217,32 @@ height: 110px;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
+
+    .about-play{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .play-img img{
+        width: 328px;
+height: 248px;
+        align-items: center;
+    }
+    .play-info{
+        width: 329px;
+height: 299px;
+        padding: 15px;
+    }
    footer{
        display: flex;
+       justify-content: center;
        align-items: center;
    }   
+   /* .foot-part img{
+    width: 220px;
+    height: 63px;
+   }
+   .footer-icon{
+    width: 178px;
+    height: 63px;
+   } */
 }
