@@ -284,6 +284,7 @@ height: 110px;
 @media only screen and (max-width:688px) {
     body{
         overflow-x: hidden;
+        overflow-y: hidden;
         align-items: center;
         justify-content: center;
     }
