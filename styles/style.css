@@ -381,11 +381,11 @@ height: 299px;
 
 /* tablet-----------------------view */
 @media only screen and (min-width:688px) and (max-width:992px) {
-    /* body{
+    body{
         overflow-x: hidden;
         align-items: center;
         justify-content: center;
-    } */
+    }
     .container1{
         width: 100%;
     }
