@@ -43,6 +43,9 @@ body{
     justify-content: space-between;
     margin-top: 21px;
 }
+.navbar ul{
+    margin-left: -36px;
+}
 .navbar ul li{
     list-style: none;
     display: inline-block;
