@@ -221,10 +221,57 @@ height: 427px;
 .img-banner:hover .img-body a{
     margin-left: 15px;
 }
+/* about-section------------------------------------ */
+.about-section{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+  
+}
+form p,input,textarea{
+    padding: 10px;
+  
+}
 
+input{
+    border: none;
+    width: 70%;
+    border-bottom: 2px solid gray;
+    background-color:#F3F1FF;
+}
+input:focus{
+    outline: none;
+}
+input[type="button"]{
+    border: none;
+    width: 20%;
 
-
-
+}
+textarea{
+    border: none;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color:#F3F1FF;
+    margin-left: 10px;
+    width: 80%;
+}
+textarea:focus{
+    outline: none;
+}
+form{
+    width: 50%;
+    
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
+}
+.map{
+      width: 50%;
+    
+}
+.map iframe{
+    width: 100%;
+}
 
 
 
@@ -289,9 +336,7 @@ height: 110px;
         align-items: center;
         justify-content: center;
     }
-    .container1{
-        width: 100%;
-    }
+   
     .container{
         width: 100%;
     }
@@ -343,16 +388,20 @@ height: 44px; */
          
         transform: scale(1.1);
     }
-    
+  
 
-
+    .container1{
+        width: 100%;
+    }
     .players{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
+        width: 100%;
     }
 
     .about-play{
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
         
     }
     .play-img img{
@@ -368,6 +417,16 @@ height: 299px;
     .img-section{
         grid-template-columns: repeat(1,1fr);
         row-gap: 21px;
+    }
+    .about-section{
+      width: 100%;
+        flex-direction: column;
+    }
+    .about-section form{
+        width: 100%;
+    }
+    .map{
+        width: 100%;
     }
    footer{
        display: flex;
