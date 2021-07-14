@@ -1,8 +1,10 @@
+
+/* font-awasome-cdn----------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
 
-
+/* utilities-------------------------------------- */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -23,6 +25,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* header-part-start------------------------------------------------------ */
  header{
     width: 100%;
     display: flex;
@@ -81,12 +84,14 @@ transition: transform 3s ease-in;
 .fa-sign-in-alt{
     margin-right: 8px;
 }
+/* link and button same color--------------start------------------------------ */
 .color-btn{
     text-decoration: none;
     color: #fff;
     padding: 10px 24px;
     background: #E02C6D;
 }
+/* link and button same color -----------------end------------------------------ */ 
 
 .header-part-2{
     display: flex;
@@ -107,7 +112,7 @@ margin-top: 121px;
     margin-left: 8px;
 }
 
-/* players section-- */
+/* players section-------------------------------------------------------------- */
 main{
     display: flex;
     flex-direction: column;
@@ -145,7 +150,7 @@ margin: 16px 0px;
     font-size: 16px;
 }
 
-/* playground css */
+/* playground css-------------------------------------------------------------- */
 .about-play{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -186,18 +191,17 @@ height: 427px;
     transition: transform 3s ease-in;                /*animation add*/
 }
 .img-haed img{
-    /* width: 330px;
-    height: 474px; */
+  
     width: 300px;
     height: 350px;
-    /* overflow: hidden; */
+  
 }
 
 .img-body{
-    /* position: absolute; */
+  
     display: none;
     width: 230px;
-    /* bottom: 20px; */
+    
     
 }
 .img-banner:hover  .img-haed{
@@ -480,19 +484,6 @@ height: 299px;
     }
     .navbar ul{
         margin-left: -36px;
-    }
-    .left{
-        /* display: flex;
-        flex-direction: column; */
-    }
-    .left p{
-        /* width: 278px;
-height: 138px; */
-    }
-    .left a{
-       
-        /* width: 168px;
-height: 44px; */
     }
     .right{
         display: flex;
