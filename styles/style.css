@@ -5,6 +5,10 @@
 
 
 /* utilities-------------------------------------- */
+.flex{
+    display: flex;
+    align-items: center;
+}
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -46,6 +50,9 @@ body{
     justify-content: space-between;
     margin-top: 21px;
 }
+.navbar .flex a i{
+    display: none;
+}
 .navbar ul{
     margin-left: -36px;
 }
@@ -60,6 +67,7 @@ body{
     text-decoration: none;
     color: #fff;
 }
+
 .right img{
     /* width: 388px;
 height: 428px; */
@@ -360,7 +368,7 @@ height: 110px;
         display: block;
     }
     .login-icon a{
-display: flex;
+        display: flex;
     }
 
     .header-part-2{
@@ -447,7 +455,7 @@ height: 299px;
    } */
 }
 
-/* tablet-----------------------view */
+/* ---------------------------------------------tablet-----------------------view */
 @media only screen and (min-width:688px) and (max-width:992px) {
     body{
         overflow-x: hidden;
@@ -472,9 +480,10 @@ height: 299px;
     .header-part-1{
         justify-content: space-between;
     }
-    .header-part-1 .navbar{
+    /* .header-part-1 .navbar{
         display: block;
-    }
+    } */
+    
     .login-icon a{
     display: flex;
     }
@@ -482,9 +491,16 @@ height: 299px;
     .header-part-2{
         flex-direction: row;
     }
+    
     .navbar ul{
         margin-left: -36px;
     }
+    /* .navbar ul li{
+        display: none;
+    } */
+    /* .navbar ul li a i {
+        display: block;
+     } */
     .right{
         display: flex;
         justify-content: center;
