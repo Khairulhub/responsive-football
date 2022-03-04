@@ -5,10 +5,28 @@
 
 
 /* utilities-------------------------------------- */
-.flex{
+/* .flex{
     display: flex;
     align-items: center;
-}
+} */
+/* @keyframes rolling {
+    0%{
+        top:0;
+        left: 0;
+    }
+    25%{
+        left: 400px;
+    }
+    50%{
+        top: 400px;
+    }
+    75%{
+        right: -400px;
+    }
+    100%{
+        left: 0;
+    }
+} */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -50,7 +68,7 @@ body{
     justify-content: space-between;
     margin-top: 21px;
 }
-.navbar .flex a i{
+.navbar  a i{
     display: none;
 }
 .navbar ul{
@@ -67,6 +85,11 @@ body{
     text-decoration: none;
     color: #fff;
 }
+/* .right{
+    position: relative;
+    animation: rolling 5 case-out 0.1 infinite alternate ;
+    animation-play-state: running;
+} */
 
 .right img{
     /* width: 388px;
@@ -75,12 +98,14 @@ width: 556.01px;
 height: 438px;
 margin-top: 49px;
 margin-bottom: 86px;
-transition: transform 3s ease-in;  
+transition: transform 1s ease-in-out;  
 }
 /* transform add------------------------- */
-.right img:hover{
-     
+.header-part-2:hover .right img{
     transform: scale(1.1);
+    /* position: relative;
+    animation: rolling 5 case-out 0.1 infinite alternate ;
+    animation-play-state: running; */
 }
 
 .login-icon{
@@ -361,10 +386,28 @@ height: 110px;
         flex-direction: column;
         margin: 21px;
     }
-    .header-part-1{
-        justify-content: flex-end;
+    /* .header-part-1{
+        justify-content: flex-start;
+    } */
+    /* .header-part-1 .navbar{
+        display: block;
+    } */
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .header-part-1 .navbar{
+ .navbar a i{           /* display bar ===    */
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        
+    }
+   
+    .navbar  ul{
+        display: none;
+    }
+    .navbar:hover  ul{
         display: block;
     }
     .login-icon a{
