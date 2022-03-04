@@ -424,6 +424,9 @@ height: 110px;
     .left p{
         /* width: 278px;
 height: 138px; */
+font-size: 36px;
+margin: 0;
+padding: 52 0 0 0;
     }
     .left a{
        
@@ -435,6 +438,7 @@ height: 44px; */
         justify-content: center;
     }
     .right img{margin-top: 94px;
+        margin-top: 50px;
         width: 329px;
        height: 259.17px;
        transition: transform 3s ease-in; 
